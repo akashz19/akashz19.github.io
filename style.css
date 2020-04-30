@@ -1,0 +1,78 @@
+body {
+    background-image: url("compute-ea4c57a4.png");
+    margin: 0px;
+}
+.container{
+    diaplay: grid;
+    grid-template-coloumns: 1fr;
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+.left-side{
+    display: flex;
+}
+.nav-wrapper > .left-side > div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+
+}
+.nav-link-wrapper{
+    color: greenyellow;
+    height:30px;
+    border-bottom:1px green;
+    transition: border-bottom 0.5s;
+}
+.nav-link-wrapper a {
+    font-size: 23px;
+    font-family: monospace;
+    color: greenyellow;
+    text-decoration: none;
+    border-bottom:1px green ;
+    transition: color 0.5s;
+}
+.nav-link-wrapper:hover{
+    border-bottom:1px solid black;
+}
+.nav-link-wrapper a:hover{
+    color: black;
+}
+.subtitle{
+    text-align: center;
+    color: greenyellow;
+    font-style: normal;
+    font-size: 25px;
+    font-family: monospace;
+    transition: 2s;
+
+}
+.subtitle:hover{
+    color:blue;
+}
+.subtitle h4:hover{
+    color:blueviolet;
+    transform:rotate(-180deg);
+}
+.subtitle h3:hover{
+    color: cyan;
+    transform:rotate(-180deg);
+}
+.linkedin > .connect{
+    text-align: center;
+    font-size: 16px;
+    font-family:monospace;
+    padding-left: 19px;
+    color:greenyellow;
+}
+.linkedin{
+    position: absolute;                  
+    bottom:0;                          
+    left:0;
+}
+.linkedin h3:hover{
+    text-align: center;
+    color:black;
+}
