@@ -1,7 +1,3 @@
 # akashz19.github.io
 
-This is my portfolio website.
-
-Checking changes.
-
-Checking another one.
+This is my portfolio [website](https://akashz19.github.io/).
