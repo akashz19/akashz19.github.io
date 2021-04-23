@@ -24,7 +24,6 @@
     ]
 
     var tbody = document.getElementById('achv-main-table').getElementsByTagName('tbody')
-    console.log(432,tbody)
     for (let i = 0; i < data.length; i++) {
         $(tbody).append(`
         <tr>

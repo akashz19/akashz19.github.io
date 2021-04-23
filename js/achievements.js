@@ -1,5 +1,5 @@
 var achvHeadings = [
-    `4 star rated on Codechef and 2144 ratings on Hackerrank.`
+    `4 star rated on Codechef.`
     ``,
     ``,
     ``
