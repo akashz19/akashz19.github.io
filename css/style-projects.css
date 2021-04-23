@@ -1,0 +1,120 @@
+#nav-projects {
+    padding-left: 50px;
+    padding-right: 30px;
+    font-family: "Quicksand", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#nav-projects h2 {
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+.proj-card {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 300px;
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.proj-card {
+    height: 320px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
+    border-radius: 2px;
+}
+
+.proj-card img {
+    width: 100%;
+    height: 200px;
+    opacity: 1;
+}
+
+.proj-card .title {
+    margin-top: 10px;
+    box-sizing: border-box;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.proj-card h4 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Roboto, Helvetica Neue, sans-serif;
+    margin-bottom: 5px;
+}
+
+.proj-card p {
+    font-family: Roboto, Helvetica Neue, sans-serif;
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+.proj-card .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #2c98f0;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.proj-card:hover .overlay{
+    opacity: 0.92;
+}
+
+.proj-card .btt{
+    box-sizing: border-box;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    text-align: center;
+}
+
+.proj-card .btt p{
+    margin-top: 6px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.proj-card i{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 2em;
+}
+
+.proj-card .btt:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+    #nav-projects {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #nav-projects .cc{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+    }
+}

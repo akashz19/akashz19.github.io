@@ -1,0 +1,324 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    /* madharchod bugs */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.intro-bkg {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: url('../images/intro-bkg.jpg') no-repeat center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.intro-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.4;
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), #000000;
+}
+
+.intro-content {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    color: #fff;
+    z-index: 2;
+}
+
+.intro-content h1,h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 54px;
+    font-weight: 200;
+}
+
+.intro-content .title {
+    margin-top: 10%;
+    margin-left: 20%;
+    /* border: 2px solid white; */
+}
+
+.btn-contact {
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: right;
+}
+
+.btn-w {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 20px;
+    padding-top: 20px;
+    /* border: 2px solid #fff; */
+}
+
+.project-container {
+    /* margin-top: 0px; */
+    padding-top: 30px;
+    width: 100%;
+    height: auto;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-family: 'Lato', sans-serif;
+}
+
+.project-container .icon img {
+    max-width: 64px;
+    max-height: 64px;
+    border-radius: 10px;
+}
+
+.project-container .left {
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+}
+
+.project-container .tag-title {
+    margin-left: 20px;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-container .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.project-container .tag {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container .tag-item {
+    margin-left: 2px;
+    margin-right: 1px;
+    margin-bottom: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFF;
+    border-radius: 0.25em;
+    padding: .2em .6em .3em .3em;
+    line-height: 1;
+    font-size: 12px;
+}
+
+.social-container {
+    display: flex;
+    float: right;
+    justify-content: space-around;
+    width: 130px;
+}
+
+.social-container a {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.social-container a:hover {
+    font-size: 120%;
+    transition: 0.2s;
+}
+
+.fa-google-play {
+    content: "\f3ab";
+}
+
+.mhr {
+    border-width: 6px;
+    margin: 24px 0!important;
+    width: 90px;
+    border-radius: 3px;
+}
+
+.project-container .details {
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+/* links on intro page */
+
+.social-w {
+    margin-top: 30px;
+    width: 100%;
+    /* just to keep links in right */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.intro-links {
+    display: flex;
+    justify-content: space-around;
+    width: 24%;
+}
+
+.intro-links a {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.intro-links a:hover {
+    font-size: 120%;
+    transition: 0.2s;
+}
+
+
+/* scroll below to see more */
+
+.scroll{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 16px;
+    margin-top: 100px;
+}
+
+.scroll i{
+    margin-top: 8px;
+    font-size: 150%;
+}
+
+/* .swiper-slide img{
+    border: 2px solid white;
+    width: 200px;
+} */
+
+.project-container p{
+    margin-bottom: 0px;
+}
+
+.project-container .minor-detail{
+    margin-top: 10px;
+    /* border: 1px solid white; */
+}
+
+.details b{
+    font-weight: 300!important;
+    margin-bottom: 4px;
+    letter-spacing: .5px;
+    font-family: Lato,sans-serif;
+    line-height: 1.5;
+}
+
+.details{
+    font-weight: 200!important;
+    margin-bottom: 4px;
+    letter-spacing: .5px;
+    font-family: Lato,sans-serif;
+    line-height: 1.5;
+}
+
+.read-more{
+    cursor:pointer;
+}
+
+.read-more:hover{
+    cursor:pointer;
+    transform: scaleX(1.2);
+    transform: scaleY(1.2);
+    transition-duration: 1s;
+}
+
+.more-details{
+    display:none;
+}
+
+@media only screen and (max-width: 500px) {
+    .project-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: 'Lato', sans-serif;
+    }
+    .links {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .project-container .tag {
+        justify-content: unset;
+    }
+    .btn-contact {
+        display: none;
+    }
+    /* to hide contact me button in mobiles */
+    .btn-w {
+        display: none;
+    }
+    .intro {
+        height: 100vh;
+    }
+    .intro-content h1 {
+        font-size: 54px;
+        font-weight: 200;
+    }
+
+    .intro-content h2 {
+        font-size: 40px;
+        font-weight: 200;
+    }
+    .intro-content .title {
+        margin-top: 15%;
+        margin-left: 10%;
+        /* border: 2px solid white; */
+    }
+
+    .social-w {
+        margin-top: 15%;
+        /* just to keep links in right */
+        display: flex;
+        justify-content: center;
+    }
+    .intro-links {
+        display: flex;
+        justify-content: space-around;
+        /* width: 130px; */
+        width: 50%;
+    }
+    .intro-links a {
+        cursor: pointer;
+        color: #ffffff;
+    }
+    .intro-links a:hover {
+        font-size: 120%;
+        transition: 0.2s;
+    }
+
+    .scroll{
+        margin-top: 60px;
+    }
+    
+}

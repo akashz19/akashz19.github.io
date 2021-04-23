@@ -1,0 +1,11 @@
+.grid-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#skills-0 img {
+    height: 58px;
+}

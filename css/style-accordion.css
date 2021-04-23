@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+    src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+}
+
+#education {
+    padding-left: 50px;
+    padding-right: 100px;
+    font-family: "Quicksand", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.accordion-item {
+    width: 100%;
+}
+
+.accordion-title {
+    width: 100%;
+    cursor: pointer;
+    color: #3E3E3E;
+    background-color: #F2F3F7;
+    text-align: left;
+    border: 1px solid #E6E6E6;
+    font-family: "Quicksand", Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: block;
+    height: 50px;
+    padding-top: 6px;
+    margin-bottom: 5px;
+    /*should be same as bottom margin of content*/
+    outline: none;
+}
+
+.accordion-title.active, .accordion-title:hover {
+    color: #FFF;
+    background-color: #2D98F0;
+    border: 1px solid white;
+}
+
+.accordion-content {
+    /* border: 1px solid #E6E6E6; */
+    margin-bottom: 0px;
+    padding-left: 5px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion-content-left {
+    float: left;
+}
+
+.accordion-content-right {
+    float: right;
+    margin-right: 20px;
+}
+
+.accordion-content-bottom {
+    float: left;
+}
+
+.accordion-title:after {
+    font-family: "icomoon";
+    content: '\e114';
+    font-size: 14px;
+    float: right;
+    margin-right: 15px;
+}
+
+.accordion-title.active:after {
+    content: '\e115';
+}
+
+@media only screen and (max-width: 500px) {
+    #education {
+        padding-left: 10px;
+        padding-right: 18px;
+        font-family: "Quicksand", Arial, sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.8;
+        color: rgba(0, 0, 0, 0.7);
+    }   
+}
