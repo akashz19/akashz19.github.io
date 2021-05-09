@@ -1,541 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AkashAnand</title>
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style-nav.css">
-    <link rel="stylesheet" href="css/style-slider.css">
-    <link rel="stylesheet" href="css/style-accordion.css">
-    <link rel="stylesheet" href="css/style-timeline.css">
-    <link rel="stylesheet" href="css/style-card-skills.css">
-    <link rel="stylesheet" href="css/style-bar-skills.css">
-    <link rel="stylesheet" href="css/style-achievements.css">
-    <link rel="stylesheet" href="css/style-projects.css">
-    <link rel="stylesheet" href="css/style-achv-table.css">
-    <link rel="stylesheet" href="css/margin.css">
-    <link rel="stylesheet" href="css/icon-grid.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/projects-card.css">
-    <link href="https://fonts.googleapis.com/css?family=Fresca&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Josefin+Sans|PT+Sans|Rubik&display=swap"
-        rel="stylesheet">
+	<meta charset="utf-8">
+	<title>Akash Anand</title>
+	<meta name="author" content="Akash Anand" />
+	<meta name="theme-color" content="#1e2327" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="images/accepted.png">
+
+	<script type="text/javascript" src="js/loadCSS.js"></script>
+	<script>
+		loadCSS("https://fonts.googleapis.com/css?family=Dosis:200,400");
+		loadCSS("https://fonts.googleapis.com/css?family=Raleway");
+		loadCSS("css/style.css"); 000
+	</script>
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+		<![endif]-->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144934197-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-144934197-2');
+	</script>
 
 </head>
 
 <body>
-    <nav>
-        <div id="profile">
-            <img src="./images/akash.jpeg" alt="avcb" style="border-radius: 70%;">
-            <div></div>
-        </div>
-        <h2>Akash Anand</h2>
-        <div id="nav-details">
-            <p id="nav-details-left">Comp.Sci. </p>
-            <p id="nav-details-right"> IIIT (Ranchi)</p>
-        </div>
-        <a href="#about">About</a>
-        <a href="#skills-0">Skills</a>
-        <a href="#experience">Work Experience</a>
-        <a href="#nav-projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#achievements">Achievements</a>
+	<div class="jumbotron" id="jumbo">
+		<div class="name">Akash Anand</div>
+		<div class="handle">(@akashz19)</div>
+		<nav>
+			<ul class="navbar">
+				<li class="navbar-item">
+					<a class="navbar-block resume"
+						href=>RÉSUMÉ</a>
+				</li>
+			</ul>
+		</nav>
+		<nav>
+			<ul class="navbar">
+				<li class="navbar-item">
+					<a class="navbar-block" href="https://www.codechef.com/users/akash1906">CODECHEF</a>
+				</li>
+				<li class="navbar-item">
+					<a class="navbar-block" href="https://www.hackerrank.com/akashi99">HACKERRANK</a>
+				</li>
 
-        <div class="social-container">
-            <div class="social-item">
-                <a href="http://github.com/akashz19" target="_blank">
-                    <i class="fa fa-fw fa-github" style="font-size: 150%;"></i>
-                </a>
-            </div>
-            <div class="social-item">
-                <a href="https://www.linkedin.com/in/akashanand-1/" class="social-link-item" target="_blank">
-                    <i class="fa fa-fw fa-linkedin" style="font-size: 150%;"></i>
-                </a>
-            </div>
-            <div class="social-item">
-                <script>gen_mail_to_link('an.akash1906@gmail.com', 'Hello from Portfolio');</script>
-                <a class="social-link-item" target="_blank"
-                    href="mailto:an.akash1906@gmail.com?subject=Hello from Portfolio">
-                    <i class="fa fa-fw fa-envelope" style="font-size: 150%;"></i>
-                </a>
-            </div>
-        </div>
-    </nav>
-    <main>
-        <section id="about">
-            <img id="slider-bkg" src="images/bkg1.jpg">
-            <div class="intro">
-                <h1>Hi! <br>I'm Akash</h1>
-                <h2>CS Undergrad | Open source enthusiast | Web Developer
-                    (Nodejs and ReactJs) |
-                    Active competitive Programmer @Codechef/akash1906 @hackerrank/akashi99 | Looking for internship
-                    opportunity</h2>
-                <p><a class="btn-resume" href="assets/Resume.pdf" target="_blank">View Resume <i
-                            class="icon-download4"></i></a></p>
-                <div class="M30">
-                </div>
-                <div class="link-wrapper">
-                    <a href="">
-                        <div><img src="images/dev-icon/codechef-circle.png" alt="jjk"></div>
-                    </a>
-                    <a href="">
-                        <div><img src="images/dev-icon/codeforces-circle.png" alt="jjk"></div>
-                    </a>
-                    <a href="">
-                        <div><img src="images/dev-icon/hackerrank-circle.png" alt="jjk"></div>
-                    </a>
-                    <a href="">
-                        <div><img src="images/dev-icon/hackerearth-circle.png" alt="jjk"></div>
-                    </a>
-                </div>
-            </div>
-        </section>
+				<li class="navbar-item">
+					<a class="navbar-block" href="https://www.hackerearth.com/@an.akash1906">HACKEREARTH</a>
+				</li>
 
-        <div class="M30">
-        </div>
+				<li class="navbar-item">
+					<a class="navbar-block" href="https://github.com/akashz19">GITHUB</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
 
-        <section id="experience">
-            <div>
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                        <span class="heading-meta">Experience</span>
-                        <h2 class="colorlib-heading animate-box">Work Experience</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="timeline-centered">
-                            <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-                                <div class="timeline-entry-inner">
-
-                                    <div class="timeline-icon color-1">
-                                        <i class="icon-pen2"></i>
-                                    </div>
-
-                                    <div class="timeline-label">
-                                        <h2><a href="https://iiitranchi.ac.in/">Community Coordinator</a> <span>JAN 2020 -
-                                                AUG 2020</span></h2>
-                                       
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-                                <div class="timeline-entry-inner">
-                                    <div class="timeline-icon color-none">
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                        <h2 class="colorlib-heading animate-box">Volunteer</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="timeline-centered">
-                            <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-                                <div class="timeline-entry-inner">
-
-                                    <div class="timeline-icon color-1">
-                                        <i class="icon-pen2"></i>
-                                    </div>
-
-                                    <div class="timeline-label">
-                                        <h2><a href="#">Coding Blocks</a> <span>Nov-2019
-                                                - AUG 2020</span></h2>
-                                        <h4>Campus Ambassador</h4>
-                                        <ul>
-                                            <li class="animate-box" data-animate-effect="fadeInLeft">
-                                                Organised Data Structeres And Algorithms Workshop</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-                                <div class="timeline-entry-inner">
-                                    <div class="timeline-icon color-none">
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="M30">
-        </div>
-
-        <section id="skills-0">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                    <span>What I do?</span>
-                    <h2>Here are some of my expertise</h2>
-                </div>
-            </div>
-            <div class="row" style="margin-top: 60px;">
-            </div>
-            <div class="row margin-card">
-                <div class="col-lg-4 col-md-6 text-center animate-box">
-                    <div class="skills-card color-3">
-                        <span class="icon">
-                            <i class="icon-data"></i>
-                        </span>
-                        <div class="desc">
-                            <h3>Web Development (ReactJs)</h3>
-                            <p>Have 3 year of experience in developing web Apps using ReactJs.
-                            </p>
-                            <div class="dh">
-                                <div id="detail-web">
-                                    <b>Frontend</b> : <div class="tt">HTML</div>, <div class="tt">CSS</div>, <div
-                                        class="tt">React</div>, <div class="tt">JQuery</div>.
-                                    <br>
-                                    <b>Backend</b> : <div class="tt">NodeJs</div>
-                                    <br>
-                                    <b>Database</b> : <div class="tt">MongoDb</div>, <div class="tt">Firebase</div>,
-                                    <div class="tt">SQL</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-1 col-md-0"></div>
-                <div class="col-lg-7 col-md-6 dev-icon-wrapper">
-                    <div class="row">
-                        <div>
-                            <img src="./images/dev-icon/react.png" />
-                            <img src="./images/dev-icon/redux.png" />
-                            <img src="./images/dev-icon/bootstrap.png" />
-                            <img src="./images/dev-icon/styled-components.png" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div>
-                            <img src="./images/dev-icon/node.png" />
-                            <img src="./images/dev-icon/mongoDB.png" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div>
-                            <img src="./images/dev-icon/826612.png" />
-                            <img src="./images/dev-icon/git.png" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="row margin-expertise"></div>
-            <div class="row margin-card">
-                <div class="col-lg-4 col-md-6 text-center animate-box">
-                    <div class="skills-card color-1">
-                        <span class="icon">
-                            <i class="icon-bulb"></i>
-                        </span>
-                        <div class="desc">
-                            <h3>Competitive Programming</h3>
-                            <p>Actively participate in challenges by on codechef, codeforces, hackerrank, hackerearth.
-                            </p>
-                            <div class="dh">
-                                <div id="detail-android">
-                                    <b>Languages</b> : <div class="tt">JAVA</div>, <div class="tt">Kotlin</div>, <div
-                                        class="tt">C++</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-1 col-md-0"></div>
-                <!-- <div class="col-lg-6 percent-bars" id="cp"> -->
-                <div class="col-lg-7 col-md-6 dev-icon-wrapper">
-                    <div class="M30"></div>
-                    <div class="row">
-                        <div class="grid-wrapper">
-                            <img src="./images/dev-icon/codechef.png" />
-                            <img src="./images/dev-icon/hackerearth.png" />
-                            <img src="./images/dev-icon/hackerrank.png" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="row margin-expertise"></div>
-        </section>
-
-        <section id="nav-projects">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                    <span class="heading-meta">My Work</span>
-                    <h2 class="colorlib-heading animate-box">Recent Work</h2>
-                </div>
-            </div>
-            <!-- Elements will be added dynamically by jQuery -->
-            <div class="row">
-                <div class="col-lg-4 col-sm-12 cc">
-                    <div class="tb" style="background: url('images/proj1.jpg') no-repeat center;">
-                        <div class="project-bkg-mask"
-                            style="opacity: 0.5; background: linear-gradient(90deg, rgba(0, 0, 0, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%), #fcb900;">
-                        </div>
-                        <div class="dd">
-                            <div class="project-card">
-                                <img class="card-icon" src="images/logo1.jpeg">
-                                <h3 class="card-title">Covid-19 Tracker</h3>
-                                <div class="card-tag">
-                                    <div class="tag-item">React Js</div>
-                                    <div class="tag-item">HTML</div>
-                                    <div class="tag-item">CSS</div>
-                                </div>
-                                <!-- <button class="card-btn" type="button">Details</button> -->
-                            </div>
-                            <div class="btn-wrapper">
-                                <a href="https://akashz19.github.io/corona/" target="_blank"><button
-                                        class="card-btn" type="button">Details</button></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12 cc">
-                    <div class="tb" style="background: url('images/proj3.png') no-repeat center;">
-                        <div class="project-bkg-mask"
-                            style="opacity: 0.5; background:linear-gradient(90deg, rgba(0,0,0,0.35) 0%, rgba(255,255,255,0.35) 100%), #003366">
-                        </div>
-                        <div class="dd">
-                            <div class="project-card">
-                                <img class="card-icon" src="images/logo1.jpeg">
-                                <h3 class="card-title">Sorting Visualizer</h3>
-                                <div class="card-tag">
-                                    <div class="tag-item">Javascript</div>
-                                    <div class="tag-item">HTML CSS</div>
-                                </div>
-                                <!-- <button class="card-btn" type="button">Details</button> -->
-                            </div>
-                            <div class="btn-wrapper">
-                                <a href="https://akashz19.github.io/SortViz/" target="_blank"><button
-                                        class="card-btn" type="button">Details</button></a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12 cc">
-                    <div class="tb" style="background: url('images/proj4.jpg') no-repeat center;">
-                        <div class="project-bkg-mask"
-                            style="opacity: 0.7; background:linear-gradient(90deg, rgba(0,0,0,0.35) 0%, rgba(255,255,255,0.35) 100%), #735039;">
-                        </div>
-                        <div class="dd">
-                            <div class="project-card">
-                                <img class="card-icon" src="images/logo1.jpeg">
-                                <h3 class="card-title">Movie Search App</h3>
-                                <div class="card-tag">
-                                    <div class="tag-item">React JS</div>
-                                    <div class="tag-item">HTML CSS</div>
-                                </div>
-                                <!-- <button class="card-btn" type="button">Details</button> -->
-                            </div>
-                            <div class="btn-wrapper">
-                                <a href="https://akashz19.github.io/Movies-app/" target="_blank"><button
-                                        class="card-btn" type="button">Details</button></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- <section id="achievements">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                    <span class="heading-meta">Achievements</span>
-                    <h2 class="colorlib-heading animate-box">Achievements</h2>
-                </div>
-            </div>
-            <div class="achv-wrapper animate-box fadeInLeft animated" sbv>
-                <div class="achv-item">
-                    <button class="achv-title">Bachelor Degree of Computer Science</button>
-                    <div class="achv-content">
-                        <p>
-                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts.
-
-                            Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
-                            ocean.
-                        </p>
-                    </div>
-                </div>
-                <div class="achv-item">
-                    <button class="achv-title">Bachelor Degree of Computer Science</button>
-                    <div class="achv-content">
-                        <p>
-                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts.
-
-                            Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
-                            ocean.
-                        </p>
-                    </div>
-                </div>
-                <div class="achv-item">
-                    <button class="achv-title">Bachelor Degree of Computer Science</button>
-                    <div class="achv-content">
-                        <p>
-                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts.
-
-                            Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
-                            ocean.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <div class="M30">
-        </div>
-
-        <section id="achievements">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                    <span class="heading-meta">Achievements</span>
-                    <h2 class="colorlib-heading animate-box">Achievements</h2>
-                </div>
-            </div>
-
-            <div class="achv-summary">
-                <div class="summary-item">
-                    <img src="images/star.png">
-                    <div>Highest rating of 1917 at Codechef (4 stars).</div>
-                </div>
-                <div class="summary-item">
-                    <img src="images/star.png">
-                    <div>5 star in Problem Solving at Hackerrrank.</div>
-                </div>
-                <div class="summary-item">
-                    <img src="images/star.png">
-                    <div>Global Rank 35 August Circuits’20 Hackerearth.</div>
-                </div>
-            </div>
-
-            <div style="overflow-x:auto;">
-                <table id="achv-main-table">
-                    <thead>
-                        <tr>
-                            <th>EVENT</th>
-                            <th>ORGANISER</th>
-                            <th>Indian Rank</th>
-                            <th>Global Rank</th>
-                            <th>Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
-            </div>
-
-            <!-- <table id="achv01">
-                <thead>
-                    <tr>
-                        <th width="50%">Hiring Challenges</th>
-                        <th width="25%"></th>
-                        <th width="25%"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
-            <table id="achv02">
-                <thead>
-                    <tr>
-                        <th width="50%">Online Competitive Contests</th>
-                        <th width="25%">Rank</th>
-                        <th width="25%">Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
-            <table id="achv03">
-                <thead>
-                    <tr>
-                        <th width="50%">College Contests</th>
-                        <th width="25%">Rank</th>
-                        <th width="25%">Date</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table> -->
-        </section>
-
-        <section id="education">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-                    <span class="heading-meta">Education</span>
-                    <h2 class="colorlib-heading animate-box">Education</h2>
-                </div>
-            </div>
-            <div class="accordion-wrapper animate-box fadeInLeft animated" sbv>
-                <div class="accordion-item">
-                    <button class="accordion-title">Bachelor Of Technology Computer Science</button>
-                    <div class="accordion-content">
-                        <div class="row">
-                            <div class="col-md-6" style="font-weight: 500;">
-                                Indian Institute Of Information Technology Ranchi</div>
-                            <div class="col-md-6" style="text-align: right; padding-right: 30px; font-weight: 1000;">
-                                Current GPA : 9.07</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">(2018-2022)</div>
-                        </div>
-                        <br>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <button class="accordion-title">Panel 2</button>
-                    <div class="accordion-content">
-                        <div class="row">
-                            <div class="col-md-6" style="font-weight: 500;">DAV Public School</div>
-                            <div class="col-md-6" style="text-align: right; padding-right: 30px; font-weight: 1000;">
-                                Percentage : 91</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">(CBSE)</div>
-                        </div>
-                        <br>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div style="height: 300px;"></div>
-    </main>
-
-    <script src="js/libs/jquery.min.js"></script>
-    <script src="js/libs/bootstrap.min.js"></script>
-    <script src="js/libs/jquery.waypoints.min.js"></script>
-    <script src="js/libs/jquery.countTo.js"></script>
-    <script src="js/libs/main.js"></script>
-    <script src="js/accordion-js.js"></script>
-    <script src="js/skills.js"></script>
-    <script src="js/mainJs.js"></script>
-    <!-- <script src="js/projects.js"></script> -->
-    <script src="js/achievements.js"></script>
-    <script src="js/achievement-table.js"></script>
-    <script src="js/colorText.js"></script>
-    <!-- <script src="js/libs/jquery.flexslider-min.js"></script> -->
-    <!-- Owl carousel -->
-    <!-- <script src="js/libs/owl.carousel.min.js"></script> -->
 </body>
 
 </html>
